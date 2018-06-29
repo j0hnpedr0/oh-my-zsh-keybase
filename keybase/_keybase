@@ -15,35 +15,44 @@ _arguments -C -A "-v" -A "--version" \
 case $state in
   cmds)
     _values "keybase command" \
-    "btc[add a signed cryptocurrency address to your profile]" \
-    "cert[print out the CA cert the client uses to authorize HTTPS connections]" \
-    "dir[sign or verify a directory's contents]" \
-    "config[make an initial configuration file]" \
-    "decrypt[decrypt a file]" \
-    "encrypt[encrypt a message and output to stdout or a file]" \
+    "account[Modify your account]" \
+    "base62[base62 operations]" \
+    "chat[Chat securely with keybase users]" \
+    "ctl[Control the background keybase service]" \
+    "currency[Manage cryptocurrency addresses]" \
+    "decrypt[Decrypt messages or files for keybase users]" \
+    "deprovision[Revoke the current device, log out, and delete local state.]" \
+    "device[Manage your devices]" \
+    "dump-keyfamily[Print out a user's current key family]" \
+    "encrypt[Encrypt messages or files for keybase users]" \
+    "follow[Verify a user's authenticity and optionally follow them]" \
+    "fs[Perform filesystem operations]" \
+    "git[Manage git repos]" \
     "help[display help]" \
-    "id[Identify a user, but do not accept or reject trust]" \
-    "join[establish a new account on keybase.io]" \
-    "keygen[generate a new PGP public key and optionally push it to the server]" \
-    "list-signatures[list of your non-revoked signatures]" \
-    "list-tracking[list people you are tracking]" \
-    "login[establish a session]" \
-    "logout[logout from the server]" \
-    "pull[pull your public (& private, if possible) key(s) from the server]" \
-    "push[push a PGP key from the client to the server]" \
-    "prove[add a proof of identity]" \
-    "reset[reset the local setup, deleting all local cached state]" \
-    "revoke[revoke the currently active PGP keys]" \
-    "revoke-signatures[revoke a proof or signature]" \
-    "search[search all users]" \
-    "sign[sign a message]" \
-    "status[print current status]" \
-    "switch[switch to a different user, and nuke the current state]" \
-    "track[verify a user's authenticity and optionally track them]" \
-    "untrack[untrack this user]" \
-    "update[update the keybase client software]" \
-    "verify[verify a file]" \
-    "version[output version information about this client]"
+    "home[Get and set the 'home' screen]" \
+    "id[Identify a user and check their signature chain]" \
+    "list-followers[List those who follow you]" \
+    "list-following[List who you or the given user is following]" \
+    "log[Manage keybase logs]" \
+    "login[Establish a session with the keybase server]" \
+    "logout[Logout and remove session information]" \
+    "oneshot[Establish a oneshot device, as in logging into keybase from a disposable docker]" \
+    "paperkey[Generate paper keys for recovering your account]" \
+    "passphrase[Change or recover your keybase passphrase]" \
+    "pgp[Manange keybase PGP keys]" \
+    "ping[Ping the keybase API server]" \
+    "prove[Generate a new proof of identity]" \
+    "rekey[Rekey status and actions]" \
+    "search[Search for keybase users]" \
+    "sign[Sign a document]" \
+    "signup[Signup for a new account]" \
+    "sigs[Manage signatures]" \
+    "status[Show information about current user]" \
+    "team[Manage teams]" \
+    "unfollow[Unfollow a user]" \
+    "update[The updater]" \
+    "verify[Verify message or file signatures for keybase users]" \
+    "version[Print out version and build information]"
     ret=0
     ;;
   args)
